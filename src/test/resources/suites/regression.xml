@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Login Regression tests">
+    <!--Platform test (Android, iOS)-->
+    <parameter name="platform" value="Android"/>
+    <!--Url where is listening appium server-->
+    <parameter name="url" value="http://127.0.0.1:4723"/>
+    <test name="Search tests">
+        <classes>
+            <class name="com.automation.search.SearchTest"/>
+        </classes>
+    </test>
+</suite>
